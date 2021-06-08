@@ -9,7 +9,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Label issues
+      - name: Remove labels
         uses: andymckay/labeler@1.0.2
         with:
           remove-labels: "priority"
