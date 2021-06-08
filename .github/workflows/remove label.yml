@@ -12,5 +12,6 @@ jobs:
       - name: Remove labels
         uses: andymckay/labeler@1.0.2
         with:
+          add-labels: "priority"
           remove-labels: "priority"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
