@@ -4,7 +4,6 @@ on:
     types:
       - reopened
       - opened
-      - closed
 jobs:
   label_issues:
     runs-on: ubuntu-latest
@@ -15,10 +14,5 @@ jobs:
         uses: andymckay/labeler@1.0.2
         with:
           add-labels: "priority"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Label issues
-        uses: andymckay/labeler@1.0.2
-        with:
-          add-labels: "closed"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
